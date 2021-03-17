@@ -1,0 +1,44 @@
+  pool: host-hdd
+ state: ONLINE
+status: Some supported features are not enabled on the pool. The pool can
+	still be used, but some features are unavailable.
+action: Enable all features using 'zpool upgrade'. Once this is done,
+	the pool may no longer be accessible by software that does not support
+	the features. See zpool-features(5) for details.
+config:
+
+	NAME                                                STATE     READ WRITE CKSUM
+	host-hdd                                            ONLINE       0     0     0
+	  /dev/mapper/my-hdd                                ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: host-nvme
+ state: ONLINE
+status: Some supported features are not enabled on the pool. The pool can
+	still be used, but some features are unavailable.
+action: Enable all features using 'zpool upgrade'. Once this is done,
+	the pool may no longer be accessible by software that does not support
+	the features. See zpool-features(5) for details.
+config:
+
+	NAME                                                            STATE     READ WRITE CKSUM
+	host-nvme                                                       ONLINE       0     0     0
+	  /dev/disk/by-id/id-nvme                                       ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: host-ssd
+ state: ONLINE
+status: Some supported features are not enabled on the pool. The pool can
+	still be used, but some features are unavailable.
+action: Enable all features using 'zpool upgrade'. Once this is done,
+	the pool may no longer be accessible by software that does not support
+	the features. See zpool-features(5) for details.
+config:
+
+	NAME                                                            STATE     READ WRITE CKSUM
+	host-ssd                                                        ONLINE       0     0     0
+	  /dev/disk/by-id/id-ssd                                        ONLINE       0     0     0
+
+errors: No known data errors

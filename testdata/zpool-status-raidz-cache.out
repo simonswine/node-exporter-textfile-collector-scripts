@@ -1,0 +1,15 @@
+  pool: rpool
+ state: ONLINE
+  scan: scrub repaired 0B in 1 days 09:22:35 with 0 errors on Mon Mar 15 09:46:36 2021
+config:
+
+	NAME                                              STATE     READ WRITE CKSUM
+	rpool                                             ONLINE       0     0     0
+	  raidz1-0                                        ONLINE       0     0     0
+	    /dev/disk/by-id/id1-part4                     ONLINE       0     0     0
+	    /dev/disk/by-id/id2-part4                     ONLINE       0     0     0
+	    /dev/disk/by-id/id3-part4                     ONLINE       0     0     0
+	cache
+	  /dev/sda3                                       ONLINE       0     0     0
+
+errors: No known data errors
