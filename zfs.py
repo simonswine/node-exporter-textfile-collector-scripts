@@ -51,7 +51,7 @@ class Enum(MetricWrapperBase):
                  subsystem='',
                  unit='',
                  registry=REGISTRY,
-                 labelvalues=None,
+                 _labelvalues=None,
                  states=None,
                  enum_name=None,
                  ):
@@ -63,7 +63,7 @@ class Enum(MetricWrapperBase):
             subsystem=subsystem,
             unit=unit,
             registry=registry,
-            labelvalues=labelvalues,
+            _labelvalues=_labelvalues,
         )
         if enum_name is None:
             enum_name = name
